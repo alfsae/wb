@@ -1,3 +1,7 @@
+"""
+Implements file finder function
+"""
+
 import os
 from typing import Optional
 
@@ -6,7 +10,8 @@ DEFAULT_MAX_SIZE:int = 14 * (2 ** 20)
 
 def file_finder(path: str, max_size=DEFAULT_MAX_SIZE) -> Optional[str]:
     """
-    A function that given a path of the file system finds the first file that meets the following requirements
+    A function that given a path of the file system finds
+    the first file that meets the following requirements
     a. The file owner is admin
     b. The file is executable
     c. The file has a size lower than 14*2^20 bytes
@@ -17,7 +22,7 @@ def file_finder(path: str, max_size=DEFAULT_MAX_SIZE) -> Optional[str]:
     """
 
     if os.path.isdir(path):
-        for root, dirs, files in os.walk(path):
+        for root, _, files in os.walk(path):
             for file_basename in files:
                 file_abspath = os.path.join(root, file_basename)
                 if (

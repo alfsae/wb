@@ -1,3 +1,7 @@
+"""
+Implements fist repeated number
+"""
+
 from typing import Tuple, Optional
 
 
