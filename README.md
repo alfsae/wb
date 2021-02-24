@@ -13,6 +13,8 @@ It will:
 - Create the library wheel
 - Run the tests and generate a junit and a html report
 - Run coverage and generate a report
+- Run mypy
+- Run pylint
 
 ## Code comments
 ### First repeated number
