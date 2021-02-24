@@ -2,7 +2,7 @@
 
 ## Usage
 This repository includes a python library (wallbox) and a bunch of test for it.
-You should have tox installed in the python environment you are currently using. Python sould be >= 3.6 
+You should have **tox** installed in the python environment you are currently using. Python sould be >= 3.6 
 ```shell
 cd "root_path_of_this_prohect"
 tox
@@ -15,6 +15,9 @@ It will:
 - Run coverage and generate a report
 - Run mypy
 - Run pylint
+
+## Github CI/CD
+Tests are executed in Github Actions after any commit in main branch. See: https://github.com/alfsae/wb/actions/
 
 ## Code comments
 ### First repeated number
